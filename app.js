@@ -39,11 +39,11 @@
         app.use(express.static(path.join(__dirname,'/public')))
         
 // ROTAS
-    // app.use('/painel', routeradmin)
+    app.use('/painel', routeradmin)
 
-    app.get('/painel',(req,res) =>{
-        res.render('painel',{lingue:lingue})
-    })
+    // app.get('/painel',(req,res) =>{
+    //     res.render('painel',{lingue:lingue})
+    // })
     app.get('/',(req,res) =>{
         res.render('home',{lingue:lingue})
     })
