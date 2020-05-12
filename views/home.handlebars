@@ -1,0 +1,54 @@
+<section class="section">
+  <div class="row d-flex justify-content-center ">
+
+
+    <div class="row sm-12 md-6 mg3h pd3h">
+      <div class="linha-v mg3vh"></div>
+      <div>
+        <form action="/painel" method="POST">
+          <div class="row justify-content-center align-items-center">
+            <h1>{{lingue.Login}}</h1>
+            <div class="linha-h10 mg3vh"></div>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">{{lingue.Enderecodeemailoulogin}}</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+              placeholder="{{lingue.Loginouemail}}" name="login">
+            <small id="emailHelp" class="form-text text-muted">{{lingue.Nuncavamos}}</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">{{lingue.Senha}}</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="{{lingue.Senhatxt}}" name="senha">
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">{{lingue.Cliqueemmim}}</label>
+          </div>
+          <button type="submit" class="btn btn-primary">{{lingue.Enviar}}</button>
+
+        </form>
+        <div class="not">
+
+        </div>
+      </div>
+
+
+      <div class="linha-v mg3vh"></div>
+
+    </div>
+
+
+    <div class="md-6 mg3h pd3h">
+      <div class="row justify-content-center align-items-center">
+        <div class="linha-h10 mg3vh"></div>
+        <h1>{{lingue.Atendimentos}}</h1>
+        <div class="linha-h10 mg3vh"></div>
+      </div>
+      <img class="img-fluid" src="/img/fotos.jpg">
+
+    </div>
+
+
+
+  </div>
+</section>

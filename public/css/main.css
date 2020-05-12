@@ -1,0 +1,124 @@
+/* GERAL */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* ASIDE */
+.aside{
+    background: #323845;
+    color: white;
+    position: relative;
+    width: 250px;
+    z-index: 1;
+    bottom: -0px;
+
+
+}
+/* MENU */
+.section{
+    min-height: 500px;
+    margin: auto 5%;
+}
+.not{
+    min-height: 150px;
+    width: 100%;
+    background-color: cornflowerblue;
+    margin-top: 20px;
+}
+nav{
+    height: 120px;
+    margin:0px;
+}
+.menu{
+    width: 100%;
+}
+.menu ul {
+    display: inline-flex;
+    padding:0px;
+    list-style:none;
+}
+.menu li{
+    margin: auto;
+    padding: 47px 70px;
+    text-align: center;
+}
+
+/* LINHAS DO SISTEMA */
+.linha-h40{
+    background: #30B2C4;
+    width: 400px;
+    height: 2px;
+}
+
+.linha-h20{
+    background: #30B2C4;
+    width: 200px;
+    height: 2px;
+}
+
+.linha-h10{
+    background: #30B2C4;
+    width: 100px;
+    height: 2px;
+}
+.linha-h5{
+    background: #30B2C4;
+    width: 50px;
+    height: 2px;
+}
+.linha-v{
+    background: #30B2C4;
+    width: 2px;
+    height: 400px;
+    margin: 50px auto; 
+}
+/* PADDING */
+.pd3h{
+    padding: 0 30px;
+}
+/* MARGENS DO SISTEMA */
+
+.mg0h{
+    margin: 0 5px;
+}
+.mg0vh{
+    margin: 5px 5px;
+}
+.mg1h{
+    margin: 0 10px;
+}
+.mg2h{
+    margin: 0 20px;
+}
+.mg3h{
+    margin: 0 30px;
+}
+.mg4h{
+    margin: 0 40px;
+}
+.mg4dh{
+    margin: 0 10px 0px 0px;
+}
+.mg4eh{
+    margin: 0 0px 0px 40px;
+}
+.mg3vh{
+    margin: 30px 30px;
+}
+/* ICONES DO SISTEMA */
+.icon16{
+    height: 16px;
+}
+.icon32{
+    height: 32px;
+}
+.icon48{
+    height: 48px;
+}
+.icon64{
+    height: 64px;
+}
+/* FOOTER */
+footer{
+    margin: 30px;
+    text-align: center;
+}
