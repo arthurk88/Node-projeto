@@ -1,6 +1,7 @@
 const conn = require('./connect');
-
 const Sequelize = require('sequelize');
+
+// MODULOS E CRIAÇÂO DE BANDO
 
 const Users = conn.sequelize.define('PESSOAS',{
 

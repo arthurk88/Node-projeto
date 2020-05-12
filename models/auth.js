@@ -5,6 +5,7 @@ const bd = ('./models/bd')
 
 const user = bd.Users
 
+// configurando PASSPORT
 
 module.exports = function(passport){
     passport.use(new localStrategy({usernameField:'LOGIN'}, (login, senha, done) =>{
