@@ -317,7 +317,9 @@ Contacts.sync().then(() => console.log("Database is ready"))
 Clients.sync().then(() => console.log("Database is ready"))
 Reports.sync().then(() => console.log("Database is ready"))
 historic.sync().then(() => console.log("Database is ready"))
-attendances.sync().then(() => console.log("Database is ready")) //sync({force:true});
+attendances.sync().then(() => console.log("Database is ready")) 
+
+//sync({force:true});
 
 module.exports = {
     Users:Users,

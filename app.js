@@ -44,12 +44,15 @@
     app.get('/',(req,res) =>{
         res.render('home',{lingue:lingue})
     })
+    
     app.get('/sobrenos',(req,res) =>{
         res.render('sobrenos',{lingue:lingue})
     })
+
     app.get('/contato',(req,res) =>{
         res.render('contato',{lingue:lingue})
     })
+
     app.post('/painel',(req,res, next) =>{
         passport.authenticate('local',{
             successRedirect: "/",
@@ -57,7 +60,7 @@
             failureFhash: true
         })(req,res,next)
     })
-    
+
     app.get('*',(req,res) =>{
         res.render('404')
     })
