@@ -128,17 +128,17 @@ footer{
     left: -250px;
     width: 250px;
     height: 100%;
-    background: #042331;
+    background: #323845;
     transition: all .5s ease;
     top: 0px;
     z-index: 1;
   }
   .sidebar header {
-    font-size: 22px;
+    font-size: 20px;
     color: white;
-    line-height: 70px;
+    line-height: 30px;
     text-align: center;
-    background: #063146;
+    background:black;
     user-select: none;
   }
   .sidebar ul a{
@@ -183,7 +183,7 @@ footer{
     left: -195px;
     top: 17px;
     font-size: 30px;
-    color: #0a5275;
+    color: white;
     padding: 4px 9px;
     transition: all .5s ease;
   }
@@ -207,7 +207,5 @@ footer{
   #check:checked ~ .section{
     margin-left: 250px;
   }
-  #check:checked ~ .navbar{
-    margin-left: 250px;
-  }
+
 
