@@ -13,7 +13,6 @@ a{color: #0f0f0f;}
 a:hover{color: cornflowerblue;}
 /* MENU */
 .section{
-    min-height: 500px;
     margin: auto 5%;
 }
 .not{
@@ -119,6 +118,8 @@ a:hover{color: cornflowerblue;}
 footer{
     margin: 30px;
     text-align: center;
+    position: relative;
+    bottom: 0px;
 }
 /* MENU SISTEMA */
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
@@ -154,7 +155,7 @@ footer{
     border-top: 1px solid rgba(255,255,255,.1);
     transition: .4s;
   }
-  ul li:hover a{
+  .sidebar ul li:hover a{
     padding-left: 50px;
   }
   .sidebar ul a i{
@@ -205,6 +206,9 @@ footer{
     margin-left: 250px;
   }
   #check:checked ~ .section{
+    margin-left: 250px;
+  }
+  #check:checked ~ .menu{
     margin-left: 250px;
   }
 
