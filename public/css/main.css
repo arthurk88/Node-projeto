@@ -38,7 +38,9 @@ a:hover{color: cornflowerblue;}
     padding: 47px 70px;
     text-align: center;
 }
-
+.w100{
+  width: 100%;
+}
 /* LINHAS DO SISTEMA */
 .linha-h40{
     background: #30B2C4;
@@ -171,8 +173,8 @@ footer{
     cursor: pointer;
   }
   label #btnmenu{
-    left: 40px;
-    top: 25px;
+    left: 10px;
+    top: 10px;
     font-size: 35px;
     color: white;
     padding: 6px 12px;
@@ -199,17 +201,9 @@ footer{
   #check:checked ~ label #cancel{
     left: 195px;
   }
-  #check:checked ~ .row{
+  #check:checked ~ *:not(.sidebar){
     margin-left: 250px;
   }
-  #check:checked ~ footer{
-    margin-left: 250px;
-  }
-  #check:checked ~ .section{
-    margin-left: 250px;
-  }
-  #check:checked ~ .menu{
-    margin-left: 250px;
-  }
+
 
 

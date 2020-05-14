@@ -33,6 +33,10 @@ var Limpar = "Limpar"
 
 //MENU
 
+//MENU DE CONFIGURACOES
+
+var cadastrarempresas = "Cadastrar empresas"
+
 module.exports = {
     painel: painel,
     configuracao: configuracao,
@@ -55,5 +59,6 @@ module.exports = {
     Email:Email,
     Messagem:Messagem,
     Limpar:Limpar,
-    Loginouemail:Loginouemail
+    Loginouemail:Loginouemail,
+    cadastrarempresas:cadastrarempresas
 }

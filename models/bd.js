@@ -86,7 +86,7 @@ const Addresses = conn.sequelize.define('ENDERECOS',{
     PAIS:{
         type: Sequelize.STRING
     },
-    DESCRICAO:{
+    COMPLEMENTO:{
         type: Sequelize.STRING
     }
 })
@@ -115,6 +115,9 @@ const Companies = conn.sequelize.define('EMPRESAS',{
     RAZAO:{
         type: Sequelize.STRING,
     },
+    NOMEEMPRESA:{
+        type: Sequelize.STRING,
+    },
     CNPJ:{
         type: Sequelize.INTEGER,
     },
@@ -125,6 +128,9 @@ const Companies = conn.sequelize.define('EMPRESAS',{
         type: Sequelize.INTEGER,
     },
     TELEFONE:{
+        type: Sequelize.INTEGER,
+    },
+    TELEFONE2:{
         type: Sequelize.INTEGER,
     },
     SERVICO:{
