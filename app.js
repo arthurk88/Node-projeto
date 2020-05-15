@@ -12,6 +12,7 @@
     const bd = require('./models/bd.js')
     const passport = require("passport")
     const localStrategy = require("passport-local").Strategy
+    const moment = require('moment')
 
 // CONFIGURAÇÕES
     // SESSION
@@ -30,7 +31,14 @@
             next()
         })
     // Templetes engine
-        app.engine('handlebars', handlebars({defaultLayout:'main'}));
+        app.engine('handlebars', handlebars({
+            
+            defaultLayout:'main',    
+            helpers: {
+            formatDate: (date) => {
+                return moment(date).format('DD/MM/YYYY')
+            }
+        }}));
         app.set('view engine', 'handlebars');
     // CONFIGURAR BODY PARSER
         app.use(bodyParser.urlencoded({extended: false}))

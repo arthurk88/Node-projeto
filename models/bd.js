@@ -65,6 +65,9 @@ const Addresses = conn.sequelize.define('ENDERECOS',{
         primaryKey: true,
         autoIncrement: true
     },
+    IDEMPRESA:{
+        type: Sequelize.STRING
+    },
     RUA:{
         type: Sequelize.STRING
     },
@@ -104,13 +107,14 @@ const Logs = conn.sequelize.define('LOGS',{
     }
 })
 const Companies = conn.sequelize.define('EMPRESAS',{
-    IDEMPRESAS:{
+    IDEMPRESA:{
         type: Sequelize.INTEGER,
         primaryKey: true,
-        autoIncrement: true
+        autoIncrement: true,
+        unique: true,
     },
     MATRIZ:{
-        type: Sequelize.STRING,
+        type: Sequelize.INTEGER,
     },
     RAZAO:{
         type: Sequelize.STRING,
@@ -120,12 +124,10 @@ const Companies = conn.sequelize.define('EMPRESAS',{
     },
     CNPJ:{
         type: Sequelize.INTEGER,
+        unique: true,
     },
     LOGO:{
         type: Sequelize.BLOB('long'),
-    },
-    IDENDERECO:{
-        type: Sequelize.INTEGER,
     },
     TELEFONE:{
         type: Sequelize.INTEGER,
@@ -326,6 +328,18 @@ historic.sync().then(() => console.log("Database is ready"))
 attendances.sync().then(() => console.log("Database is ready")) 
 
 //sync({force:true});
+// Users.sync({force:true})
+// Addresses.sync({force:true})
+// Logs.sync({force:true})
+// Companies.sync({force:true})
+// Services.sync({force:true})
+// Configs.sync({force:true})
+// Typeattendances.sync({force:true})
+// Contacts.sync({force:true})
+// Clients.sync({force:true})
+// Reports.sync({force:true})
+// historic.sync({force:true})
+// attendances.sync({force:true})
 
 module.exports = {
     Users:Users,
@@ -341,7 +355,6 @@ module.exports = {
     historic:historic,
     attendances:attendances,
  } 
-
 
 // DROP TABLE IF EXISTS pessoas;
 // DROP TABLE IF EXISTS logs;

@@ -1,0 +1,9 @@
+<h1>Listar empresas</h1>
+
+{{#each listarempresas}}
+    ID: {{IDEMPRESAS}}<br>
+    Nome: {{NOMEEMPRESA}}<br>
+    Valor: {{CNPJ}}<br>
+    Cadastrado em: {{#formatDate CREATE}}{{/formatDate}}<br>
+    <hr>
+{{/each}}
